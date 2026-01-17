@@ -78,3 +78,11 @@
 F14::Send "^0"              ; Reset zoom
 F15::Send "^{+}"            ; Zoom in
 F16::Send "^-"              ; Zoom out
+
+; === SYSTEM (RHyper) ===
+>^>!>#a::Send "#i"          ; Settings (Win+I)
+
+; === SLACK (RHyper+Shift) ===
+>^>!>#+o::Send "^+a"        ; All unreads
+>^>!>#+p::Send "^k"         ; Quick switcher
+>^>!>#+[::Send "^#{Right}"  ; Navigate forward
