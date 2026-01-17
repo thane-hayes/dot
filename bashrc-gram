@@ -1,3 +1,6 @@
+# Source confidential settings
+[ -f ~/.bashrc-confidential ] && source ~/.bashrc-confidential
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -30,9 +33,6 @@ fi
 
 # Mise activation
 eval "$(/home/thane/.local/bin/mise activate bash)"
-
-# Source confidential settings
-[ -f ~/.bashrc-confidential ] && source ~/.bashrc-confidential
 
 # Source shared config
 source ~/thane-hayes/bashrc
