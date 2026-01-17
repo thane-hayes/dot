@@ -1,7 +1,3 @@
--- OS detection
-local is_mac = vim.loop.os_uname().sysname == "Darwin"
-local is_wsl = vim.fn.has("wsl") == 1
-
 -- Disable treesitter for help files (vimdoc parser issue in 0.12-dev)
 vim.g.ts_highlight_help = false
 vim.api.nvim_create_autocmd("FileType", {
@@ -47,15 +43,6 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 8
 vim.opt.clipboard = "unnamedplus"
 
--- Mac-specific settings
-if is_mac then
-  vim.opt.shell = "/opt/homebrew/bin/bash"
-  vim.opt.autoread = true
-  vim.opt.scrollback = 100000
-  vim.api.nvim_create_autocmd({"FocusGained", "BufEnter"}, { command = "checktime" })
-  vim.api.nvim_create_autocmd("TermOpen", { command = "setlocal number" })
-end
-
 -- Load plugins
 require("lazy").setup("plugins")
 
@@ -65,10 +52,6 @@ vim.keymap.set("n", "<leader>j", "<C-w>j", { desc = "Move to lower pane" })
 vim.keymap.set("n", "<leader>k", "<C-w>k", { desc = "Move to upper pane" })
 vim.keymap.set("n", "<leader>l", "<C-w>l", { desc = "Move to right pane" })
 vim.keymap.set("n", "<leader>m", "<C-w>w", { desc = "Cycle through panes" })
-
--- Page navigation
-vim.keymap.set("n", "<leader>u", "<C-u>", { desc = "Page up" })
-vim.keymap.set("n", "<leader>d", "<C-d>", { desc = "Page down" })
 
 -- Exit insert mode with jj
 vim.keymap.set("i", "jj", "<Esc>", { desc = "Exit insert mode" })

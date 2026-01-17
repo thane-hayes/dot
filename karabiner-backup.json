@@ -213,7 +213,7 @@
                         ]
                     },
                     {
-                        "description": "rhyper tmux: t new window, 1-9 switch windows",
+                        "description": "rhyper tmux: t new window, w close window, 1-9 switch windows",
                         "manipulators": [
                             {
                                 "from": {
@@ -226,6 +226,20 @@
                                         "modifiers": ["left_control"]
                                     },
                                     { "key_code": "c" }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": { "mandatory": ["right_control", "right_option", "right_command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "b",
+                                        "modifiers": ["left_control"]
+                                    },
+                                    { "key_code": "7", "modifiers": ["left_shift"] }
                                 ],
                                 "type": "basic"
                             },

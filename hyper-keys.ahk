@@ -57,6 +57,7 @@
 
 ; === TMUX (RHyper) ===
 >^>!>#t::Send "^b" "c"      ; New Window
+>^>!>#w::Send "^b" "&"      ; Close Window
 >^>!>#1::Send "^b" "1"
 >^>!>#2::Send "^b" "2"
 >^>!>#3::Send "^b" "3"
