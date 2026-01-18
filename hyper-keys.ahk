@@ -4,6 +4,10 @@
 
 #Requires AutoHotkey v2.0
 
+; Suppress Alt key-up to prevent menu activation
+~LAlt Up::return
+~RAlt Up::return
+
 ; === GENERAL (Editing) ===
 <^<!<#x::Send "^x"          ; Cut
 <^<!<#c::Send "^c"          ; Copy
