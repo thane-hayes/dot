@@ -83,18 +83,21 @@ Cycle Panes & LH-SH-0 & ctrl-w ctrl-w \\
 \textit{Leader (Space)}
 
 \begin{tabular}{lll}
-Find Files & SPC-p & telescope \\
+Find Files & SPC-f & telescope \\
 Live Grep & SPC-g & telescope \\
 Buffers & SPC-b & telescope \\
 Recent Files & SPC-r & telescope \\
 Registers & SPC-v & telescope \\
 File Tree & SPC-e & nvim-tree \\
-Find in Tree & SPC-f & find file \\
+Find in Tree & SPC-nf & find file \\
 Window Nav & SPC-hjkl & panes \\
+Cycle Panes & SPC-m & panes \\
 Page Up/Down & SPC-u/d & scroll \\
-Session Search & SPC-ss & sessions \\
+Session Search & SPC-ss & sessions (Mac) \\
 Rename & SPC-rn & LSP rename \\
 Code Action & SPC-ca & LSP action \\
+Format & SPC-fm & LSP format \\
+Diagnostics & SPC-q & location list \\
 \end{tabular}
 
 \vspace{0.2cm}
@@ -104,9 +107,24 @@ Code Action & SPC-ca & LSP action \\
 Go to Def & gd & definition \\
 Go to Decl & gD & declaration \\
 Go to Impl & gi & implementation \\
+Go to Type & gy & type definition \\
 References & gr & references \\
 Hover Docs & K & hover info \\
+Signature & gs & signature help \\
+Diag Float & gl & diagnostic \\
+Prev Diag & [d & previous \\
+Next Diag & ]d & next \\
 Exit Insert & jj & Escape \\
+\end{tabular}
+
+\vspace{0.2cm}
+\textit{Completion}
+
+\begin{tabular}{lll}
+Trigger & C-Space & complete \\
+Confirm & Enter & select \\
+Next Item & Tab & navigate \\
+Prev Item & S-Tab & navigate \\
 \end{tabular}
 
 \vspace{0.2cm}
@@ -114,6 +132,7 @@ Exit Insert & jj & Escape \\
 
 \begin{tabular}{lll}
 New Window & RH-T & ctrl-b c \\
+Close Window & RH-W & ctrl-b \& \\
 Window 1-9 & RH-1..9 & ctrl-b 1..9 \\
 Copy Mode & RH-ESC & ctrl-b [ \\
 Paste & RH-P & ctrl-b ] \\

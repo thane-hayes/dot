@@ -77,7 +77,7 @@
 
 ; === ZOOM ===
 F14::Send "^0"              ; Reset zoom
-F15::Send "^{+}"            ; Zoom in
+F15::Send "^{=}"            ; Zoom in
 F16::Send "^-"              ; Zoom out
 
 ; === SYSTEM (RHyper) ===
