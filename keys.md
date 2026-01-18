@@ -1,14 +1,14 @@
 ---
 header-includes:
   - \usepackage{multicol}
-  - \setlength{\columnsep}{1cm}
-geometry: landscape, margin=0.4in
-fontsize: 9pt
+  - \setlength{\columnsep}{0.5cm}
+geometry: landscape, margin=0.2in
+fontsize: 7pt
 ---
 
 # Karabiner Shortcuts
 
-\begin{multicols}{2}
+\begin{multicols}{3}
 \raggedright
 
 \textbf{GENERAL (Editing)}
@@ -29,6 +29,7 @@ Quit App & LH-Q & cmd-q \\
 Spotlight & LH-SPACE & cmd-space \\
 App Switcher & LH-TAB & cmd-tab \\
 Escape & LH-E & esc \\
+Escape & LH-` & esc \\
 \end{tabular}
 
 \vspace{0.2cm}
@@ -59,7 +60,8 @@ Zoom In & F15 & cmd-+ \\
 Zoom Out & F16 & cmd-- \\
 \end{tabular}
 
-\vspace{0.2cm}
+\columnbreak
+
 \textbf{MOUSE}
 
 \begin{tabular}{lll}
@@ -71,8 +73,34 @@ Left Click & LH-SH-B & click \\
 Right Click & LH-SH-N & right-click \\
 \end{tabular}
 
-\columnbreak
+\vspace{0.2cm}
+\textit{Slow/Precise (Both Hypers)}
 
+\begin{tabular}{lll}
+Move Left & LH+RH-H & 10px left \\
+Move Down & LH+RH-J & 10px down \\
+Move Up & LH+RH-K & 10px up \\
+Move Right & LH+RH-L & 10px right \\
+\end{tabular}
+
+\vspace{0.2cm}
+\textbf{DEBUGGING}
+
+\begin{tabular}{lll}
+Step Into & RH-I & F12 \\
+Apple Menu & RH-A & ctrl-F2 \\
+\end{tabular}
+
+\vspace{0.2cm}
+\textbf{SLACK}
+
+\begin{tabular}{lll}
+All Unreads & RH-SH-O & cmd-shift-a \\
+Switcher & RH-SH-P & cmd-k \\
+Forward & RH-SH-[ & ctrl-cmd-right \\
+\end{tabular}
+
+\vspace{0.2cm}
 \textbf{NVIM}
 
 \begin{tabular}{lll}
@@ -148,23 +176,6 @@ Copy Exit & Enter & yank \\
 Half Page & ctrl-u/d & 12 lines \\
 Full Page & ctrl-b/f & full page \\
 Jump N Lines & 12k/14j & num + dir \\
-\end{tabular}
-
-\vspace{0.2cm}
-\textbf{DEBUGGING}
-
-\begin{tabular}{lll}
-Step Into & RH-I & F12 \\
-Apple Menu & RH-A & ctrl-F2 \\
-\end{tabular}
-
-\vspace{0.2cm}
-\textbf{SLACK}
-
-\begin{tabular}{lll}
-All Unreads & RH-SH-O & cmd-shift-a \\
-Switcher & RH-SH-P & cmd-k \\
-Forward & RH-SH-[ & ctrl-cmd-right \\
 \end{tabular}
 
 \end{multicols}
