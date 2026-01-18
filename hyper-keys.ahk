@@ -81,7 +81,7 @@ F15::Send "^{=}"            ; Zoom in
 F16::Send "^-"              ; Zoom out
 
 ; === SYSTEM (RHyper) ===
->^>!>#a::Send "#i"          ; Settings (Win+I)
+>^>!>#a::Send "#x"          ; Power User menu (Win+X)
 
 ; === SLACK (RHyper+Shift) ===
 >^>!>#+o::Send "^+a"        ; All unreads
